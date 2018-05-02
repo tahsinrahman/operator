@@ -46,9 +46,9 @@ The following table lists the configurable parameters of the Vault chart and the
 | Parameter                             | Description                                                        | Default            |
 | ------------------------------------- | ------------------------------------------------------------------ | ------------------ |
 | `replicaCount`                        | Number of Vault operator replicas to create (only 1 is supported)  | `1`                |
-| `operator.registry`                   | Docker registry used to pull Vault operator image                  | `vault-operator`   |
-| `operator.repository`                 | Vault operator container image                                     | `pack-operator`    |
-| `operator.tag`                        | Vault operator container image tag                                 | `canary`           |
+| `operator.registry`                   | Docker registry used to pull Vault operator image                  | `kubevault`        |
+| `operator.repository`                 | Vault operator container image                                     | `operator`         |
+| `operator.tag`                        | Vault operator container image tag                                 | `0.1.0`            |
 | `imagePullPolicy`                     | container image pull policy                                        | `IfNotPresent`     |
 | `criticalAddon`                       | If true, installs Vault operator as critical addon                 | `false`            |
 | `logLevel`                            | Log level for operator                                             | `3`                |
